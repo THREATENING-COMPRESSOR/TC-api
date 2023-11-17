@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TC.Domain.Catalog;
+using TC.Data;
 
 namespace TC.Api.Controllers
 {
@@ -7,17 +8,17 @@ namespace TC.Api.Controllers
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
+        private readonly StoreContext _db;
+
+        public CatalogController(StoreContext db){
+            _db = db;
+        }
+
         // returns list items "all items"
         [HttpGet]
         public IActionResult GetItems()
         {
-            var items = new List<Item>()
-            {
-                new Item("Shirt", "Ohio State shirt", "Nike", 29.99m),
-                new Item("Shorts", "Ohio State shorts", "Nike", 44.99m)
-            };
-
-            return Ok(items);
+            return Ok(_db.Items);
         }
 
         // returns a singular item based on ID
