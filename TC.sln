@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC.Domain", "TC.Domain\TC.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC.Api", "TC.Api\TC.Api.csproj", "{198AFF3E-A3C5-464C-95C1-1D5247B3BBD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC.Data", "TC.Data\TC.Data.csproj", "{983F009B-EE4D-40C7-AAFE-171F937E5A65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{198AFF3E-A3C5-464C-95C1-1D5247B3BBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{198AFF3E-A3C5-464C-95C1-1D5247B3BBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{198AFF3E-A3C5-464C-95C1-1D5247B3BBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983F009B-EE4D-40C7-AAFE-171F937E5A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983F009B-EE4D-40C7-AAFE-171F937E5A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983F009B-EE4D-40C7-AAFE-171F937E5A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983F009B-EE4D-40C7-AAFE-171F937E5A65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
