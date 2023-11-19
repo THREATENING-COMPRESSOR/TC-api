@@ -21,14 +21,16 @@ namespace TC.Api.Controllers
             return Ok(_db.Items);
         }
 
-        // returns a singular item based on ID
+        // returns a singular item based on ID from db
         [HttpGet("{id:int}")]
         public IActionResult GetItem(int id)
         {
-            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
-            item.Id = id;
-
-            return Ok(item);
+            var item = _db.Items.Find(id);
+            if (item == null){
+                // returns error 404
+                return NotFound();
+            }
+            return Ok();
         }
         
         // creates new resource
