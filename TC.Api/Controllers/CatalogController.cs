@@ -14,7 +14,7 @@ namespace TC.Api.Controllers
             _db = db;
         }
 
-        // returns list items "all items"
+        // returns list items "all items" from db
         [HttpGet]
         public IActionResult GetItems()
         {

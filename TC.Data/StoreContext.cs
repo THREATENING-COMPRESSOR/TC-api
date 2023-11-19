@@ -15,5 +15,12 @@ namespace TC.Data
 
         // Represents a database table 'Item' in the context
         public DbSet<Item> Items { get; set; }
+
+        // override bases class's
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            DbInitializer.Initialize(builder);
+        }
     }
 }
