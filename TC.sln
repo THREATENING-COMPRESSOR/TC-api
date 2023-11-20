@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC.Api", "TC.Api\TC.Api.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC.Data", "TC.Data\TC.Data.csproj", "{983F009B-EE4D-40C7-AAFE-171F937E5A65}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{056FDAD0-AE6A-450B-8770-78DC8121AF49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{TC-api}.Domain.Tests", "tests\{TC-api}.Domain.Tests\{TC-api}.Domain.Tests.csproj", "{4CC5FD7B-1345-4D55-9811-BE10CD0CFB3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{983F009B-EE4D-40C7-AAFE-171F937E5A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{983F009B-EE4D-40C7-AAFE-171F937E5A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{983F009B-EE4D-40C7-AAFE-171F937E5A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC5FD7B-1345-4D55-9811-BE10CD0CFB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC5FD7B-1345-4D55-9811-BE10CD0CFB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC5FD7B-1345-4D55-9811-BE10CD0CFB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC5FD7B-1345-4D55-9811-BE10CD0CFB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4CC5FD7B-1345-4D55-9811-BE10CD0CFB3D} = {056FDAD0-AE6A-450B-8770-78DC8121AF49}
 	EndGlobalSection
 EndGlobal
