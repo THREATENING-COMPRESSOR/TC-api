@@ -16,6 +16,9 @@ namespace TC.Data
         // Represents a database table 'Item' in the context
         public DbSet<Item> Items { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
+        // 
+
         // override bases class's
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -24,3 +27,5 @@ namespace TC.Data
         }
     }
 }
+
+

@@ -27,5 +27,6 @@ namespace TC.Domain.Catalog {
             this.Review = review;
             
         }
+        
     }
 }
