@@ -1,4 +1,5 @@
 ﻿using TC.Domain.Catalog;
+using TC.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 
 // Specifies the namespace in which the class is declared
