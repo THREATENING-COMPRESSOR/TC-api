@@ -1,4 +1,4 @@
-namespace _TC_api_.Domain.Tests;
+namespace TC.Domain.Tests;
 
 [TestClass]
 public class UnitTest1
