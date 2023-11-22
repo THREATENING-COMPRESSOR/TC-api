@@ -16,4 +16,9 @@
     <PackageReference Include="coverlet.collector" Version="3.2.0" />
   </ItemGroup>
 
+<!-- reference to TC.Domain file -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\TC.Domain\TC.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
