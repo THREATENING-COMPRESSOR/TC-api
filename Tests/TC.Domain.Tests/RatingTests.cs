@@ -21,7 +21,7 @@ public class RatingTests
 
     [TestMethod]
     [ExpectedException(typeof(ArgumentException))]
-    public void Can_Create_New_Rating_Without_Valid_Stars()
+    public void Cannot_Create_New_Rating_Without_Valid_Stars()
     {
         // arrange
         var rating = new Rating(0, "Mike", "Great fit!");
