@@ -40,6 +40,7 @@ namespace TC.Domain.Catalog
             Price = price;
         }
 
+        // creates a rating when making a new item
         public void AddRating(Rating rating)
         { 
             this.Ratings.Add(rating);
