@@ -12,6 +12,8 @@ builder.Services.AddDbContext<StoreContext>(options =>
     options.UseSqlite("Data Source=../Registrar.sqlite",
     b => b.MigrationsAssembly("TC.Api"))
 );
+
+// enable cors
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
