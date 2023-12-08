@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TC.Domain.Catalog;
 using TC.Data;
+using TC.Api.Security;
 
 namespace TC.Api.Controllers
 {
@@ -80,11 +81,13 @@ namespace TC.Api.Controllers
 
         // delete an item from collection
         [HttpDelete("{id:int}")]
+        // [Authorize("delete:catalog")]
         public IActionResult DeleteItem(int id)
         {
             var item = _db.Items.Find(id);
 
-            if (item == null){
+            if (item == null)
+            {
                 return NotFound();
             }
 
