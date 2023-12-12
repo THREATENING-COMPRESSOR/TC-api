@@ -6,6 +6,7 @@ using TC.Api.Security;
 
 namespace TC.Api.Controllers
 {
+    // test
     [ApiController]
     [Route("[controller]")]
     public class CatalogController : ControllerBase
